@@ -22,7 +22,11 @@ function App() {
     age?: number;
   };
   let person: Person;
-
+  //focus:interface
+  interface IvoPerson {
+    interested: string;
+  }
+  let ivoperson: IvoPerson;
   //focus:   array of person object
   let lotsOfPerson: Person[];
 
@@ -48,6 +52,11 @@ function App() {
     age: 27,
   };
 
+  //interface
+  ivoperson = {
+    interested: "women",
+  };
+
   //array of person object type
 
   lotsOfPerson = [
@@ -55,6 +64,7 @@ function App() {
     { name: "dipoto", age: 29 },
     { name: "rakib", age: 28 },
   ];
+
   return (
     <div className="App">
       <p>{age}</p>
