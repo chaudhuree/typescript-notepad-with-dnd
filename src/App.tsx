@@ -3,15 +3,17 @@ import "./App.css";
 function App() {
   /////////////////   type    //////////////////////
   let anything: any;
+  //   better way if do not know the type
+  let unKnown: unknown;
   let name: string;
   let age: number | string; //type can be number or string
   let isOld: boolean;
   let hobbies: string[];
   //tuple
-  //  it can only have two element one need to be number and another is a string
+  //   it can only have two element one need to be number and another is a string
   let role: [number, string];
 
-  //object type
+  //todo:object type
   //   let person:object  // this is not the optimal way to declare object
   //   so do this
   //   name should start with capital letter
@@ -21,11 +23,17 @@ function App() {
   };
   let person: Person;
 
-  //   array of person object
+  //focus:   array of person object
   let lotsOfPerson: Person[];
 
-  //function  notice that not equal= its colon after printName
+  //focus:  function  notice that not equal= its colon after printName
   let printName: (name: string) => void;
+  //never type return nothing and void return undefined
+  // let printName: (name: string) => never;
+  //focus: another way to declare function
+  function add(x: number, y: number): number {
+    return x + y;
+  }
 
   /////////////////   use case    //////////////////////
   name = "chaudhuree";
