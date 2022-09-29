@@ -5,7 +5,7 @@ import { FC } from "react";
 const App: FC = () => {
   return (
     <div className="App">
-      <Basics></Basics>
+      {/*<Basics></Basics>*/}
     </div>
   );
 };
