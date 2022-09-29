@@ -21,10 +21,14 @@ function App() {
     name: string;
     age?: number;
   };
+  type ExtendPerson = Person & { interested: string };
   let person: Person;
   //focus:interface
   interface IvoPerson {
     interested: string;
+  }
+  interface ExtendIvoPerson extends IvoPerson {
+    hobby: string[];
   }
   let ivoperson: IvoPerson;
   //focus:   array of person object
