@@ -1,4 +1,6 @@
-const React = () => {
+import {FC} from "react";
+
+const React:FC = () => {
     return (
         <div>
 
