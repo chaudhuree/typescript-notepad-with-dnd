@@ -13,7 +13,7 @@ export default function Basics() {
   //   it can only have two element one need to be number and another is a string
   let role: [number, string];
 
-  //todo:object type
+  //docs: todo:object type
   //   let person:object  // this is not the optimal way to declare object
   //   so do this
   //   name should start with capital letter
@@ -79,3 +79,6 @@ export default function Basics() {
     </div>
   );
 }
+
+
+//note: npm i -D @types/react @types/react-dom
