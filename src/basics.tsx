@@ -13,7 +13,7 @@ export default function Basics() {
   //   it can only have two element one need to be number and another is a string
   let role: [number, string];
 
-  //docs: todo:object type
+  //note: object type
   //   let person:object  // this is not the optimal way to declare object
   //   so do this
   //   name should start with capital letter
@@ -35,12 +35,13 @@ export default function Basics() {
   let lotsOfPerson: Person[];
 
   //focus:  function  notice that not equal= its colon after printName
+  // (name: string) => void -----> it is the printName function type
   let printName: (name: string) => void = function (name) {
     console.log(name);
     return name;
   };
   printName("chaudhuree");
-  //never type return nothing and void return undefined
+  //(type never  )return nothing and (void) return undefined
   // let printName: (name: string) => never;
   //focus: another way to declare function
   function add(x: number, y: number): number {
@@ -79,6 +80,5 @@ export default function Basics() {
     </div>
   );
 }
-
 
 //note: npm i -D @types/react @types/react-dom
